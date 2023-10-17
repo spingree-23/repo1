@@ -192,11 +192,10 @@ def update_output_container(selected_statistics, input_year):
                 html.Div(children=[Y_chart1, Y_chart2], className='chart-item', style={'display': 'flex'}),
                 html.Div(children=[Y_chart3, Y_chart4], className='chart-item', style={'display': 'flex'})
                 ])
-
-	else:
+                
+    else:
         return None
 
 # Run the Dash app
 if __name__ == '__main__':
     app.run_server(debug=True)
-
